@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RG35XX_Cheat", "RG35XX_Cheat\RG35XX_Cheat.csproj", "{E970B1EE-06A5-4A86-9BF8-F999E408A0E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svvv", "svvv\svvv.csproj", "{F7E4F27B-7990-4D96-9201-B7EDB3E1FF6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E970B1EE-06A5-4A86-9BF8-F999E408A0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E970B1EE-06A5-4A86-9BF8-F999E408A0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E970B1EE-06A5-4A86-9BF8-F999E408A0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E970B1EE-06A5-4A86-9BF8-F999E408A0E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E4F27B-7990-4D96-9201-B7EDB3E1FF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E4F27B-7990-4D96-9201-B7EDB3E1FF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E4F27B-7990-4D96-9201-B7EDB3E1FF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E4F27B-7990-4D96-9201-B7EDB3E1FF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17B37972-1CCF-45A4-9FFC-2201A30BA642}
+	EndGlobalSection
+EndGlobal
