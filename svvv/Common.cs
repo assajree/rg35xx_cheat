@@ -339,7 +339,7 @@ namespace svvv
 
             var lines = File.ReadLines(versionPath).ToList();
             return lines.FirstOrDefault() ?? "N/A";
-        }     
+        }
 
         public string GetGoogleDownloadUrl(string id)
         {
@@ -365,7 +365,7 @@ namespace svvv
             }
         }
 
-      
+
 
         public DialogResult DownloadFile(string url, string saveToPath)
         {
@@ -385,7 +385,7 @@ namespace svvv
 
             ZipFile.ExtractToDirectory(zipPath, outputPath);
         }
-       
+
 
         private void CreateFileDirectory(string filePath)
         {
@@ -421,7 +421,7 @@ namespace svvv
 
         #endregion
 
-      
+
         public void Open(string path)
         {
             try
@@ -567,7 +567,15 @@ namespace svvv
             File.Copy(sourcePath, targetPath);
         }
 
+        public void WriteJson(object data, string path)
+        {
+            var dir = Path.GetDirectoryName(path);
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
 
+            var json = ToJson(data);
+            File.WriteAllText(path, json);
+        }
 
         public void WriteJson(string json, string path)
         {
@@ -587,6 +595,19 @@ namespace svvv
             };
             var json = JsonConvert.SerializeObject(obj, setting);
             return json;
+        }
+
+        public T FromJson<T>(string json)
+        {
+            var result = JsonConvert.DeserializeObject<T>(json);
+            return result;
+        }
+
+        public T FromJsonFile<T>(string jsonPath)
+        {
+            var json = ReadAllText(jsonPath);
+            var result = JsonConvert.DeserializeObject<T>(json);
+            return result;
         }
 
         public string ReadAllText(string path)

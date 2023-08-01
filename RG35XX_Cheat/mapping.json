@@ -1,0 +1,162 @@
+[
+  {
+    "DirectoryName": "Amstrad - GX4000",
+    "CoreName": "Caprice32"
+  },
+  {
+    "DirectoryName": "Atari - 2600",
+    "CoreName": "Stella 2014"
+  },
+  {
+    "DirectoryName": "Atari - 400-800-1200XL",
+    "CoreName": "Atari800"
+  },
+  {
+    "DirectoryName": "Atari - 5200",
+    "CoreName": "a5200"
+  },
+  {
+    "DirectoryName": "Atari - 7800",
+    "CoreName": "ProSystem"
+  },
+  {
+    "DirectoryName": "Atari - Jaguar",
+    "CoreName": "Virtual Jaguar"
+  },
+  {
+    "DirectoryName": "Atari - Lynx",
+    "CoreName": "Handy"
+  },
+  {
+    "DirectoryName": "ChaiLove",
+    "CoreName": "ChaiLove"
+  },
+  {
+    "DirectoryName": "Coleco - ColecoVision",
+    "CoreName": "Gearcoleco"
+  },
+  {
+    "DirectoryName": "DOS",
+    "CoreName": "DOSBox-Pure"
+  },
+  {
+    "DirectoryName": "FBNeo - Arcade Games",
+    "CoreName": "MAME 2003-Xtreme"
+  },
+  {
+    "DirectoryName": "Mattel - Intellivision",
+    "CoreName": "FreeInv"
+  },
+  {
+    "DirectoryName": "Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R",
+    "CoreName": "blueMSX"
+  },
+  {
+    "DirectoryName": "NEC - PC Engine - TurboGrafx 16",
+    "CoreName": "Beetle PCE Fast"
+  },
+  {
+    "DirectoryName": "NEC - PC Engine CD - TurboGrafx-CD",
+    "CoreName": "Beetle PCE Fast"
+  },
+  {
+    "DirectoryName": "NEC - PC Engine SuperGrafx",
+    "CoreName": "Beetle SuperGrafx"
+  },
+  {
+    "DirectoryName": "Nintendo - Family Computer Disk System",
+    "CoreName": "FCEUmm"
+  },
+  {
+    "DirectoryName": "Nintendo - Game Boy",
+    "CoreName": "Gambatte"
+  },
+  {
+    "DirectoryName": "Nintendo - Game Boy Advance",
+    "CoreName": "mGBA"
+  },
+  {
+    "DirectoryName": "Nintendo - Game Boy Color",
+    "CoreName": "Gambatte"
+  },
+  {
+    "DirectoryName": "Nintendo - Nintendo 64",
+    "CoreName": "Mupen64Plus-Next"
+  },
+  {
+    "DirectoryName": "Nintendo - Nintendo 64 (Aleck64)",
+    "CoreName": "Mupen64Plus-Next"
+  },
+  {
+    "DirectoryName": "Nintendo - Nintendo 64 (iQue)",
+    "CoreName": "Mupen64Plus-Next"
+  },
+  {
+    "DirectoryName": "Nintendo - Nintendo 64 (Unreleased)",
+    "CoreName": "Mupen64Plus-Next"
+  },
+  {
+    "DirectoryName": "Nintendo - Nintendo DS",
+    "CoreName": "DeSmuME"
+  },
+  {
+    "DirectoryName": "Nintendo - Nintendo Entertainment System",
+    "CoreName": "FCEUmm"
+  },
+  {
+    "DirectoryName": "Nintendo - Satellaview",
+    "CoreName": "Supafaust"
+  },
+  {
+    "DirectoryName": "Nintendo - Super Nintendo Entertainment System",
+    "CoreName": "Supafaust"
+  },
+  {
+    "DirectoryName": "PrBoom",
+    "CoreName": "PrBoom"
+  },
+  {
+    "DirectoryName": "Sega - 32X",
+    "CoreName": "PicoDrive"
+  },
+  {
+    "DirectoryName": "Sega - Dreamcast",
+    "CoreName": "Flycast"
+  },
+  {
+    "DirectoryName": "Sega - Game Gear",
+    "CoreName": "PicoDrive"
+  },
+  {
+    "DirectoryName": "Sega - Master System - Mark III",
+    "CoreName": "PicoDrive"
+  },
+  {
+    "DirectoryName": "Sega - Mega Drive - Genesis",
+    "CoreName": "PicoDrive"
+  },
+  {
+    "DirectoryName": "Sega - Mega-CD - Sega CD",
+    "CoreName": "PicoDrive"
+  },
+  {
+    "DirectoryName": "Sega - Saturn",
+    "CoreName": "Yabause"
+  },
+  {
+    "DirectoryName": "Sinclair - ZX Spectrum +3",
+    "CoreName": "Fuse"
+  },
+  {
+    "DirectoryName": "Sony - PlayStation",
+    "CoreName": "PCSX-ReARMed"
+  },
+  {
+    "DirectoryName": "Thomson - MOTO",
+    "CoreName": "Theodore"
+  },
+  {
+    "DirectoryName": "TIC-80",
+    "CoreName": "TIC-80"
+  }
+]
