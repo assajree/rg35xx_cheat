@@ -15,14 +15,15 @@ namespace RG35XX_Cheat
     {
         private Common c = new Common();
         private CoreMapping _currentMapping;
-        private string retroarchCheatPath = @"D:\Game\libretro-database\cht";
-        private string outputPath = Path.Combine(Application.StartupPath, "output");
+        public string retroarchCheatPath = Path.Combine(Application.StartupPath, "libretro_cheats");
+        public string outputPath = Path.Combine(Application.StartupPath, "cheats");
+        public string configPath = Path.Combine(Application.StartupPath, "config");
 
 
         public void CopyCheats()
         {
             // read mapping from json
-            var mappingPath = Path.Combine(Application.StartupPath, "mapping.json");
+            var mappingPath = Path.Combine(configPath,  "mapping.json");
             var mapping = c.FromJsonFile<List<CoreMapping>>(mappingPath);
 
             // loop cht file in directory
@@ -34,8 +35,13 @@ namespace RG35XX_Cheat
                 var d = new DirectoryInfo(path);
                 c.Processing(ProcessCheats, false, $@"Processing : {d.Name}");
             }
+           
+        }
 
-            c.ShowMessage("Complete");
+        public void CleanOutputDirectory()
+        {
+            if(Directory.Exists(outputPath))
+                Directory.Delete(outputPath, true);
         }
 
         public void ProcessCheats()
@@ -110,8 +116,6 @@ namespace RG35XX_Cheat
                     cheatFile.CopyTo(destFile.FullName);
                 }
             }
-
-            c.ShowMessage("Complete");
             
         }
 
@@ -122,7 +126,7 @@ namespace RG35XX_Cheat
             int COL_CHEAT_NAME = 2;
 
             List<CustomMapping> result = new List<CustomMapping>();
-            var mappingPath = Path.Combine(Application.StartupPath, "custom_mapping.xlsx");
+            var mappingPath = Path.Combine(configPath, "custom_mapping.xlsx");
             using (ExcelPackage package = new ExcelPackage(new FileInfo(mappingPath)))
             {
                 // loop all sheet

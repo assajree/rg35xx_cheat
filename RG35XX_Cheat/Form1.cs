@@ -17,22 +17,35 @@ namespace RG35XX_Cheat
     {
 
         Cheats c = new Cheats();
+        private Common cc = new Common();
 
         public Form1()
         {
             InitializeComponent();
+            InitialScreen();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void InitialScreen()
         {
+            txtOutput.Text = c.outputPath;
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            c.outputPath = txtOutput.Text.Trim();
+            if(chkClean.Checked)
+            {
+                cc.Processing(c.CleanOutputDirectory, false, "Cleaning output directory");
+            }
             c.CopyCheats();
-
+            cc.Processing(c.CustomMapping, false, "Processing : Custom Mapping");
+            
+            cc.ShowMessage("Complete");
         }
 
-        private void btnCustomMapping_Click(object sender, EventArgs e)
+        private void btnBrows_Click(object sender, EventArgs e)
         {
-            c.CustomMapping();
+            cc.SelectFolderTextBox(txtOutput, txtOutput.Text);
         }
-
     }
 }
